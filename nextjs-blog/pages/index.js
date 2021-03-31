@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Button from '../components/Button'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
@@ -15,6 +16,7 @@ export default function Home() {
           <a href="https://nextjs.org/learn">the Next.js tutorial</a>.)
         </p>
       </section>
+      <Button text="I do nothing"></Button>
     </Layout>
   )
 }
