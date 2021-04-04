@@ -7,7 +7,7 @@ const postsDirectorty = path.join(process.cwd(), "posts");
 export function getSortedPostData() {
     const fileNames = fs.readdirSync(postsDirectorty);
 
-    const allPostsData = filename.map(fileName => {
+    const allPostsData = fileNames.map(fileName => {
         const id = fileName.replace(/\.md$/,"");
 
         const fullPath = path.join(postsDirectorty, fileName);
